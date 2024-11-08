@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced CRUD Data Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="blue">
+
+<div class="container">
+    <h2>Enhanced CRUD Data Table</h2>
+
+    <!-- Form to Add/Edit Data -->
+    <form id="crudForm">
+        <input type="hidden" id="editIndex">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required min="0">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+        </div>
+        <button type="submit" class="submit-btn">Add Record</button>
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <!-- Data Table -->
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will go here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
